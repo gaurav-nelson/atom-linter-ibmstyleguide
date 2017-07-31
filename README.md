@@ -1,5 +1,5 @@
-# atom-linter-ibmstyleguide
-An Atom package for the retext-ibmstyleguide module. It uses the Atom Linter package to highlight errors and provide usage advice while writing and editing documents in Atom.
+# linter-ibmstyleguide
+An Atom package for the [retext-ibmstyleguide](https://github.com/gaurav-nelson/retext-ibmstyleguide) module. It uses the Atom Linter package to highlight errors and provide usage advice while writing and editing documents in Atom.
 
 ## Dependencies
 * [Atom](https://atom.io/)
