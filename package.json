@@ -1,96 +1,96 @@
 {
-    "name": "linter-ibmstyleguide",
-    "version": "1.0.0",
-    "description": "Linter plugin providing ibmstyleguide advice.",
-    "license": "MIT",
-    "keywords": [
-        "asciidoc",
-        "text",
-        "ibmstyleguide",
-        "writing",
-        "language",
-        "english",
-        "linter"
-    ],
-    "author": "Gaurav Nelson",
-    "repository": "https://github.com/gaurav-nelson/atom-linter-ibmstyleguide",
-    "bugs": "https://github.com/gaurav-nelson/atom-linter-ibmstyleguide/issues",
-    "main": "lib/index.js",
-    "files": [
-        "lib/index.js",
-        "lib/index.json",
-        "lib/wordchecker.js",
-        "lib/wordusage.js"
-    ],
-    "engines": {
-        "atom": ">=1.0.0 <2.0.0"
-    },
-    "dependencies": {
-        "atom-package-deps": ">=4.5.0",
-        "lodash.difference": ">=4.5.0",
-        "minimatch": ">=3.0.3",
-        "nlcst-search": ">=1.4.0",
-        "nlcst-to-string": ">=2.0.0",
-        "object-keys": ">=1.0.9",
-        "quotation": ">=1.1.0",
-        "retext": ">=5.0.0",
-        "retext-english": ">=3.0.0",
-        "unified": ">=6.1.2",
-        "unist-util-find-after": "^2.0.0",
-        "unist-util-find-before": "^2.0.0",
-        "unist-util-position": ">=3.0.0",
-        "vfile": ">=2.0.1",
-        "vfile-reporter": ">=3.0.0",
-        "vfile-sort": ">=2.0.0",
-        "retext-ibmstyleguide": ">=1.0.0"
-    },
-    "package-deps": [
-        "linter"
-    ],
-    "providedServices": {
-        "linter": {
-            "versions": {
-                "2.0.0": "provideLinter"
-            }
-        }
-    },
-    "configSchema": {
-        "ignoreFiles": {
-            "description": "Disable files matching (minimatch) glob",
-            "type": "string",
-            "default": "",
-            "order": 5
-        },
-        "grammars": {
-            "description": "List of scopes for languages which will be checked. Note: setting new sources overwrites the defaults.",
-            "type": "array",
-            "default": [
-                "source.asciidoc",
-                "source.gfm",
-                "source.pfm",
-                "text.git-commit",
-                "text.plain",
-                "text.plain.null-grammar"
-            ],
-            "order": 1
-        },
-        "severityLevel": {
-            "type": "string",
-            "title": "Severity level",
-            "default": "warning",
-            "enum": [
-                "error",
-                "warning",
-                "info"
-            ],
-            "order": 2
-        },
-        "ignoredWords": {
-            "type": "string",
-            "title": "Ignore Words",
-            "description": "Comma-seperated list of words to ignore. (NOTE: Restart `Atom` for Ignore Words to take effect.)",
-            "default": "",
-            "order": 3
-        }
+  "name": "linter-ibmstyleguide",
+  "version": "2.0.0",
+  "description": "Linter plugin providing ibmstyleguide advice.",
+  "license": "MIT",
+  "keywords": [
+    "asciidoc",
+    "text",
+    "ibmstyleguide",
+    "writing",
+    "language",
+    "english",
+    "linter"
+  ],
+  "author": "Gaurav Nelson",
+  "repository": "https://github.com/gaurav-nelson/atom-linter-ibmstyleguide",
+  "bugs": "https://github.com/gaurav-nelson/atom-linter-ibmstyleguide/issues",
+  "main": "lib/index.js",
+  "files": [
+    "lib/index.js",
+    "lib/index.json",
+    "lib/wordchecker.js",
+    "lib/wordusage.js"
+  ],
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {
+    "atom-package-deps": ">=4.5.0",
+    "lodash.difference": ">=4.5.0",
+    "minimatch": ">=3.0.3",
+    "nlcst-search": ">=1.4.0",
+    "nlcst-to-string": ">=2.0.0",
+    "object-keys": ">=1.0.9",
+    "quotation": ">=1.1.0",
+    "retext": ">=5.0.0",
+    "retext-english": ">=3.0.0",
+    "unified": ">=6.1.2",
+    "unist-util-find-after": "^2.0.0",
+    "unist-util-find-before": "^2.0.0",
+    "unist-util-position": ">=3.0.0",
+    "vfile": ">=2.0.1",
+    "vfile-reporter": ">=3.0.0",
+    "vfile-sort": ">=2.0.0",
+    "retext-ibmstyleguide": ">=1.0.0"
+  },
+  "package-deps": [
+    "linter"
+  ],
+  "providedServices": {
+    "linter": {
+      "versions": {
+        "2.0.0": "provideLinter"
+      }
     }
+  },
+  "configSchema": {
+    "ignoreFiles": {
+      "description": "Disable files matching (minimatch) glob",
+      "type": "string",
+      "default": "",
+      "order": 5
+    },
+    "grammars": {
+      "description": "List of scopes for languages which will be checked. Note: setting new sources overwrites the defaults.",
+      "type": "array",
+      "default": [
+        "source.asciidoc",
+        "source.gfm",
+        "source.pfm",
+        "text.git-commit",
+        "text.plain",
+        "text.plain.null-grammar"
+      ],
+      "order": 1
+    },
+    "severityLevel": {
+      "type": "string",
+      "title": "Severity level",
+      "default": "warning",
+      "enum": [
+        "error",
+        "warning",
+        "info"
+      ],
+      "order": 2
+    },
+    "ignoredWords": {
+      "type": "string",
+      "title": "Ignore Words",
+      "description": "Comma-seperated list of words to ignore. (NOTE: Restart `Atom` for Ignore Words to take effect.)",
+      "default": "",
+      "order": 3
+    }
+  }
 }
